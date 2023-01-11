@@ -87,6 +87,7 @@ body {
   line-height: 1.15;
   color: #212121;
   text-decoration: none;
+  position: relative;
 }
 
 a {
@@ -115,6 +116,19 @@ a {
 .link-contact:active {
   color: #2196f3;
   fill: #2196f3;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navigation-line::after {
+  content: "";
+  width: 53px;
+  height: 4px;
+  background: #2196f3;
+  border-radius: 2px;
+  position: absolute;
+  top: 76px;
 }
 
 .marketing-slogan {
@@ -282,6 +296,9 @@ a {
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   cursor: pointer;
+  transition-property: background, color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-portfolio-flex {
@@ -298,6 +315,24 @@ a {
 .image-box {
   width: 370px;
   height: 294px;
+  position: relative;
+}
+
+.title-box-name {
+  width: 370px;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tile-box-name-style {
+  color: #ffffff;
+  text-transform: uppercase;
 }
 
 .image-box-team {
@@ -344,6 +379,9 @@ a {
   border: 1px solid #eeeeee;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition-property: background, border, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .image-portfolio {
@@ -353,10 +391,13 @@ a {
   margin: 50px 0 94px;
 }
 
-.icon-header:hover,
-.icon-header:focus,
-.icon-header:active {
+.link-contact:focus .icon-header,
+.link-contact:hover .icon-header,
+.link-contact:active .icon-header {
   fill: #2196f3;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-header {
@@ -403,11 +444,17 @@ a {
 .icon-box-company:active {
   border: 1px solid #2196f3;
   fill: #2196f3;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-box-company:hover .icon-company,
 .icon-box-company:focus .icon-company,
 .icon-box-company:active .icon-company {
   fill: #2196f3;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-icon {
@@ -447,6 +494,9 @@ a {
 .icon-social-media-button:focus {
   border-radius: 50%;
   background-color: #2196f3;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .box-icon-social {
@@ -478,4 +528,7 @@ a {
 .icon-social-media-button:active .icon-social-media-team,
 .icon-social-media-button:focus .icon-social-media-team {
   fill: #ffffff;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
