@@ -110,10 +110,8 @@ a {
 
 .navigation:hover,
 .navigation:focus,
-.navigation:active::after,
 .link-contact:focus,
-.link-contact:hover,
-.link-contact:active {
+.link-contact:hover {
   color: #2196f3;
   fill: #2196f3;
   transition-property: color, fill;
@@ -121,14 +119,19 @@ a {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.navigation:active .navigation-line::after {
+.navigation-active::after {
+  background-color: #2196f3;
   content: "";
+  position: absolute;
   width: 53px;
   height: 4px;
-  background: #2196f3;
+  top: 46px;
   border-radius: 2px;
-  position: absolute;
-  top: 76px;
+  left: 0;
+}
+
+.navigation-active {
+  color: #2196f3;
 }
 
 .marketing-slogan {
