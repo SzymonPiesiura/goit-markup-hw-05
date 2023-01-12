@@ -32,7 +32,7 @@
           <nav>
             <ul class="navigation-list">
               <li>
-                <a class="navigation" href="#">Agencja</a>
+                <a class="navigation" href="index.html">Agencja</a>
                 <div class="navigation-line"></div>
               </li>
               <li>
@@ -66,7 +66,7 @@
       <section class="main-box">
         <div class="marketing-slogan">
           <h1 class="title-main">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-          <button class="button-order">Zamów Usługe</button>
+          <button class="button-order" data-modal-open>Zamów Usługe</button>
         </div>
       </section>
       <section>
@@ -407,5 +407,11 @@
         </div>
       </address>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-btn" data-modal-close>X</button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
