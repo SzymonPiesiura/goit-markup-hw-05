@@ -267,10 +267,9 @@ a {
 }
 .name-project-box {
   width: 370px;
-  height: 140px;
-  padding: 24px 20px;
+  height: 109px;
+  padding: 1px 20px;
   position: relative;
-  z-index: 1;
   background: white;
   top: -5px;
 }
@@ -283,8 +282,6 @@ a {
 
 .footer-box {
   background: #2f303a;
-  position: relative;
-  z-index: 2;
 }
 
 .logo-footer {
@@ -393,6 +390,7 @@ a {
   list-style: none;
   position: relative;
   z-index: 1;
+  overflow: hidden;
 }
 
 .image-box-portfolio:focus,
